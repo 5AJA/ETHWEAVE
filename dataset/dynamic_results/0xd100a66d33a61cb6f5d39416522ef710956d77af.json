@@ -1,0 +1,51 @@
+{
+  "token_addr_idx": 3432,
+  "verified": true,
+  "buy": {
+    "result": [
+      true,
+      true,
+      true
+    ]
+  },
+  "sell": {
+    "result": [
+      false,
+      false,
+      false
+    ],
+    "fail_type": [
+      4,
+      4,
+      4
+    ]
+  },
+  "blacklist_check": {
+    "result": false,
+    "confidence": "HIGH"
+  },
+  "trading_suspend_check": {
+    "result": false,
+    "confidence": "MEDIUM"
+  },
+  "exterior_call_check": {
+    "result": false,
+    "confidence": "LOW"
+  },
+  "unlimited_mint": {
+    "result": false,
+    "confidence": "LOW"
+  },
+  "balance_manipulation": {
+    "result": false,
+    "confidence": "LOW"
+  },
+  "tax_manipulation": {
+    "result": true,
+    "confidence": "HIGH"
+  },
+  "existing_holders_check": {
+    "result": true,
+    "confidence": "HIGH"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "token_addr_idx": 7289,
+  "verified": true,
+  "buy": {
+    "result": [
+      true,
+      true,
+      true
+    ]
+  },
+  "sell": {
+    "result": [
+      true,
+      true,
+      true
+    ],
+    "fail_type": [
+      0,
+      0,
+      0
+    ]
+  },
+  "blacklist_check": {
+    "result": false,
+    "confidence": "HIGH"
+  },
+  "trading_suspend_check": {
+    "result": false,
+    "confidence": "MEDIUM"
+  },
+  "exterior_call_check": {
+    "result": false,
+    "confidence": "LOW"
+  },
+  "unlimited_mint": {
+    "result": false,
+    "confidence": "LOW"
+  },
+  "balance_manipulation": {
+    "result": false,
+    "confidence": "MEDIUM"
+  },
+  "tax_manipulation": {
+    "result": false,
+    "confidence": "MEDIUM"
+  },
+  "existing_holders_check": {
+    "result": false,
+    "confidence": "HIGH"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "token_addr_idx": 1,
+  "verified": true,
+  "fork_block": 17863011,
+  "fork_block_reason": "burn_before",
+  "fork_block_reserve": {
+    "measured_at_block": 17861934,
+    "quote_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "quote_reserve": 57.487268111443235,
+    "token_token": "0x883e2496df47c07c7f2987691f99d491328d98c1",
+    "token_reserve": 5475144.29010533,
+    "unit": "whole_tokens",
+    "source": "pair_evt.csv Sync"
+  },
+  "tradable": true,
+  "scenarios_executed": {
+    "basic_swap_test": true,
+    "blacklist_whitelist": true,
+    "trading_suspend": true,
+    "exterior_function_call": true,
+    "unlimited_mint": true,
+    "owner_bal_manipulation": true,
+    "owner_tax_manipulation": true,
+    "existing_holders_test": true
+  },
+  "buy": {
+    "result": [
+      true,
+      true,
+      true
+    ]
+  },
+  "sell": {
+    "result": [
+      true,
+      true,
+      true
+    ],
+    "fail_type": [
+      0,
+      0,
+      0
+    ],
+    "round_labels": [
+      "SMALL",
+      "MEDIUM",
+      "LARGE"
+    ],
+    "quote_spent": [
+      0.28974999426139336,
+      1.176775128448741,
+      3.035205871470907
+    ],
+    "quote_received": [
+      0.2880227555982715,
+      1.1698656552817055,
+      3.0179285574166155
+    ],
+    "recovery_rate": [
+      0.9940388655829837,
+      0.9941284677080625,
+      0.9943076961544232
+    ],
+    "executed": [
+      true,
+      true,
+      true
+    ]
+  },
+  "blacklist_check": {
+    "result": false,
+    "confidence": "HIGH",
+    "executed": true,
+    "measured": true
+  },
+  "trading_suspend_check": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": true,
+    "measured": false
+  },
+  "exterior_call_check": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": true,
+    "measured": true
+  },
+  "unlimited_mint": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": true,
+    "measured": true
+  },
+  "balance_manipulation": {
+    "result": false,
+    "confidence": "MEDIUM",
+    "executed": true,
+    "measured": true
+  },
+  "tax_manipulation": {
+    "result": false,
+    "confidence": "MEDIUM",
+    "executed": true,
+    "measured": true
+  },
+  "existing_holders_check": {
+    "result": false,
+    "confidence": "HIGH",
+    "executed": true,
+    "measured": true,
+    "candidate_count": 10,
+    "examined_count": 3,
+    "tested_count": 3,
+    "failures": 0,
+    "skipped": {
+      "contract": 0,
+      "zero_balance": 0,
+      "invalid_address": 0,
+      "lookup_error": 0
+    },
+    "reason": "모든 기존 홀더가 매도에 성공했습니다."
+  }
+}

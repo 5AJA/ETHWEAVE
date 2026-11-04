@@ -1,0 +1,123 @@
+{
+  "token_addr_idx": 5,
+  "verified": false,
+  "fork_block": 11345845,
+  "fork_block_reason": "burn_before",
+  "fork_block_reserve": {
+    "measured_at_block": 11345844,
+    "quote_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "quote_reserve": 22.81680574326311,
+    "token_token": "0x553712fd6ec9def698e060e008bb28503bd9f6a8",
+    "token_reserve": 4808.52828946831,
+    "unit": "whole_tokens",
+    "source": "pair_evt.csv Sync"
+  },
+  "tradable": true,
+  "scenarios_executed": {
+    "basic_swap_test": true,
+    "blacklist_whitelist": false,
+    "trading_suspend": false,
+    "exterior_function_call": false,
+    "unlimited_mint": false,
+    "owner_bal_manipulation": false,
+    "owner_tax_manipulation": false,
+    "existing_holders_test": true
+  },
+  "buy": {
+    "result": [
+      true,
+      true,
+      true
+    ]
+  },
+  "sell": {
+    "result": [
+      false,
+      false,
+      false
+    ],
+    "fail_type": [
+      4,
+      4,
+      4
+    ],
+    "round_labels": [
+      "SMALL",
+      "MEDIUM",
+      "LARGE"
+    ],
+    "quote_spent": [
+      0.11500232225955812,
+      0.4718114973746402,
+      1.2688671182681726
+    ],
+    "quote_received": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "recovery_rate": [
+      null,
+      null,
+      null
+    ],
+    "executed": [
+      true,
+      true,
+      true
+    ]
+  },
+  "blacklist_check": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": false,
+    "measured": false
+  },
+  "trading_suspend_check": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": false,
+    "measured": false
+  },
+  "exterior_call_check": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": false,
+    "measured": false
+  },
+  "unlimited_mint": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": false,
+    "measured": false
+  },
+  "balance_manipulation": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": false,
+    "measured": false
+  },
+  "tax_manipulation": {
+    "result": false,
+    "confidence": "LOW",
+    "executed": false,
+    "measured": false
+  },
+  "existing_holders_check": {
+    "result": true,
+    "confidence": "HIGH",
+    "executed": true,
+    "measured": true,
+    "candidate_count": 10,
+    "examined_count": 3,
+    "tested_count": 3,
+    "failures": 3,
+    "skipped": {
+      "contract": 0,
+      "zero_balance": 0,
+      "invalid_address": 0,
+      "lookup_error": 0
+    },
+    "reason": "3명 중 3명이 매도에 실패했습니다."
+  }
+}

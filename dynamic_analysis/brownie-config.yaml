@@ -1,0 +1,33 @@
+# exclude SafeMath when calculating test coverage
+# https://eth-brownie.readthedocs.io/en/v1.10.3/config.html#exclude_paths
+reports:
+  exclude_contracts:
+    - SafeMath
+
+# Network configuration for mainnet forking
+networks:
+  settings:
+    trace: false
+  default: anvil-fork
+  anvil-fork:
+    cmd: anvil
+    host: http://127.0.0.1
+    port: 8545
+    timeout: 120
+    cmd_settings:
+      hardfork: cancun
+      mnemonic: brownie
+      accounts: 10
+      chain_id: 1
+      
+# Compiler settings
+compiler:
+  solc:
+    version: 0.6.0
+    optimizer:
+      enabled: true
+      runs: 200
+    remappings: []
+
+# dotenv support
+dotenv: .env
