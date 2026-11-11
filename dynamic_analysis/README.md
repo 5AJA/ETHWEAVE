@@ -10,11 +10,10 @@ Install Anvil (Foundry) and make the `anvil` executable available on `PATH`. Fro
 pip install -r requirements.txt requests psutil
 ```
 
-Create a `.env` file in this directory:
+Copy `.env.example` to `.env` in this directory and replace the placeholder values with your own API credentials:
 
-```dotenv
-ALCHEMY_URL=https://eth-mainnet.g.alchemy.com/v2/YOUR_API_KEY
-ETHERSCAN_TOKEN=YOUR_ETHERSCAN_API_KEY
+```sh
+cp .env.example .env
 ```
 
 `ALCHEMY_URL` is the Ethereum mainnet RPC endpoint used for the fork. `ETHERSCAN_TOKEN` is used to retrieve contract ABIs.
